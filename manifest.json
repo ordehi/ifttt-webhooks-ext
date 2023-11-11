@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "My Extension",
+  "name": "IFTTT Webhook Caller",
   "version": "1.0",
   "description": "A Chrome extension to interact with IFTTT Webhooks",
   "permissions": ["webRequest", "activeTab", "storage"],
