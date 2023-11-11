@@ -7,20 +7,33 @@
   <body>
     <div class="container">
       <h1>IFTTT Webhook Caller</h1>
-      <input type="text" id="urlInput" placeholder="Enter webhook URL here" />
-      <select id="inputType">
-        <option value="">Select input type</option>
-        <option value="json">JSON</option>
-        <option value="params">Parameters</option>
-      </select>
-      <div id="jsonInputDiv" style="display: none">
-        <label for="jsonInput">JSON Input:</label>
-        <textarea id="jsonInput" placeholder="Enter JSON here"></textarea>
-      </div>
-      <div id="paramsDiv" style="display: none">
-        <button id="addParamBtn">Add Parameter</button>
-      </div>
-      <button id="submitBtn">Call Webhook</button>
+      <form id="appForm">
+        <label for="url">URL</label>
+        <input
+          type="text"
+          id="urlInput"
+          name="url"
+          placeholder="Enter webhook URL here"
+        />
+        <select id="inputType" name="inputType">
+          <option value="">Select parameter type</option>
+          <option value="json">JSON</option>
+          <option value="params">Key-Value Pairs</option>
+        </select>
+        <div id="jsonInputDiv" style="display: none">
+          <label for="jsonInput">JSON Input</label>
+          <textarea
+            id="jsonInput"
+            placeholder="Enter JSON here"
+            name="jsonInput"
+          ></textarea>
+        </div>
+        <div id="paramsDiv" style="display: none">
+          <button id="addParamBtn">Add Parameter</button>
+        </div>
+        <button id="submitBtn" type="submit">Call Webhook</button>
+      </form>
+
       <div id="responseDisplay" class="response-area"></div>
       <div id="errorDisplay" class="error-area"></div>
     </div>

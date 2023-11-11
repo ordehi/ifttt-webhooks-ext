@@ -3,7 +3,7 @@
   "name": "My Extension",
   "version": "1.0",
   "description": "A Chrome extension to interact with IFTTT Webhooks",
-  "permissions": ["webRequest", "activeTab"],
+  "permissions": ["webRequest", "activeTab", "storage"],
   "host_permissions": ["https://maker.ifttt.com/*"],
   "background": {
     "service_worker": "background.js"
