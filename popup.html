@@ -8,6 +8,13 @@
     <div class="container">
       <h1>IFTTT Webhook Caller</h1>
       <input type="text" id="urlInput" placeholder="Enter webhook URL here" />
+      <label for="jsonInput">JSON Input:</label>
+      <textarea id="jsonInput" placeholder="Enter JSON here"></textarea>
+      <div id="params">
+        <label for="param1">Parameter 1:</label>
+        <input type="text" id="param1" name="param1" />
+      </div>
+      <button id="addParamBtn">Add Parameter</button>
       <button id="submitBtn">Call Webhook</button>
       <div id="responseDisplay" class="response-area"></div>
       <div id="errorDisplay" class="error-area"></div>
